@@ -1,0 +1,17 @@
+{
+  "name": "The Chuck Norris",
+  "description": "Switch all images to Chuck Norris + animate",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["jquery-1.10.2.min.js","function.js"],
+    "css": ["style.css"]
+  }],
+
+  "manifest_version": 2
+}
